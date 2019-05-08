@@ -38,5 +38,3 @@ render() {
    )
  }
 }
-
-//refactored out checkout streightin

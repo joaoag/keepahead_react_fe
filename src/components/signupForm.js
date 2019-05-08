@@ -38,7 +38,7 @@ const SignUpForm = ( { handleForm } ) => {
 		></input>
 
 		<input
-		    className="submitForm action_button"
+		  className="submitForm action_button"
 			id='submit_form'
 			type="submit"
 			value="Submit"

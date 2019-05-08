@@ -1,6 +1,6 @@
 
 import React, {Component} from 'react';
-import ShowVenues from './components/showvenues';
+import ShowVenues from './components/showVenues';
 import VenuePortal from './components/venuePortal';
 // import Logo from './keep_ahead_logo.png';
 
@@ -22,10 +22,12 @@ export default class App extends Component {
       }
     }
 
+// https://enigmatic-badlands-83570.herokuapp.com/api/v1/venues
+
   getLatandLong = (position) => {
       let location =  {location : {lat : position.coords.latitude.toFixed(2),  long : position.coords.longitude.toFixed(2)}};
       const body  = JSON.stringify(location)
-      fetch('https://enigmatic-badlands-83570.herokuapp.com/api/v1/venues', {
+      fetch('http://localhost:3000/api/v1/venues', {
         method: 'POST',
         headers:{
           'Content-Type': 'application/json'
